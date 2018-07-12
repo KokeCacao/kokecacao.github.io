@@ -25,9 +25,22 @@ html, body {
     padding:0;
 }
 
-h1, h2, h3 {
+h1 {
     color: #554037;
     font-weight: 300;
+    font-size: 4em;
+}
+
+h2 {
+    color: #554037;
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #554037;
+    font-weight: 300;
+    font-size: 1em;
 }
 
 /* work with hide.js */
@@ -119,11 +132,11 @@ ruby {
 
 /* code */
 code, .code-box {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     color: #654D37;
 }
 
 code {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     padding: 2px 4px;
     font-size: 90%;
     background-color: #DBC8B8;
@@ -131,21 +144,54 @@ code {
 }
 
 .code-box {
+    font-family: /*Menlo, Monaco, Consolas, */"Courier New", Courier, monospace;
     padding: 9px 14px;
     margin-bottom: 14px;
     background-color: #F2E5DA;
     border: 1px solid #B39A8F;
     border-radius: 4px;
+    page-break-inside: avoid;
+    line-height: 1.6;
+    display: block;
+    word-wrap: normal;
+    /*text-overflow: ellipsis;*/
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: auto;
 }
 
 .code-box .highlight {
     color: #B13254;
 }
 
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F2E5DA;
+    /*border-left: 1px solid #B39A8F;*/
+    border-right: 1px solid #B39A8F;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #87746C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    /*background: #B13254;*/
+}
+
 /* link */
 .link {
     color: #B13254;
     text-decoration: none;
+    border-bottom: dotted 2px #DBC8B8;
 }
 
 .link:hover {

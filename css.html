@@ -6,7 +6,6 @@
   <meta name="author" content="dgschwend">
     <title>Koke_Cacao &mdash; Koke_Cacao's personal introduction</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="index.css">
     <script src="js/scale.fix.js"></script>
     <script src="js/jquery-1.7.1.min.js"></script>
@@ -14,7 +13,7 @@
 </head>
 <body>
   <section id="1">
-    <div class="container preset">
+    <div class="container">
         <h1>CSS Test h1</h1>
         <hr class="title">
         <p>I am using <b>bold</b> and <ruby class="jp">拼
@@ -31,7 +30,15 @@
         <hr class="cut">
         <h2>Smaller Title h2</h2>
         <p>This <code>.js</code> file is also super awesome:</p>
-        <div class="code-box">print(<span class="highlight">"hello world"</span>)</div>
+        <div class="code-box">print(<span class="highlight">"hello world"</span>)<br><br>code, .code-box {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: /*Menlo, Monaco, Consolas, */"Courier New", Courier, monospace;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: #654D37;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;page-break-inside: avoid;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.6;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;overflow: auto;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;word-wrap: break-word;<br>
+}</div>
         <a href="#2" class="btn">Click here to launch the nuclear war</a>
     </div>
   </section>
