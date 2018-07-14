@@ -29,6 +29,9 @@ h1 {
     color: #554037;
     font-weight: 300;
     font-size: 4em;
+    /* cancel default h1 */
+    -webkit-margin-before: 0.1em;
+    -webkit-margin-after: 0.1em;
 }
 
 h2 {
@@ -41,6 +44,25 @@ h3 {
     color: #554037;
     font-weight: 300;
     font-size: 1em;
+}
+
+/* Typing Effect */
+.typing{
+    -webkit-animation: typing 1s infinite ease-in-out
+}
+@-webkit-keyframes typing{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* work with hide.js */
