@@ -43,7 +43,32 @@ h2 {
 h3 {
     color: #554037;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.3em;
+}
+
+/* container */
+.container {
+    width: 60%;
+    margin:25px auto 50px auto;
+    color: #87746C;
+    line-height: 1.5em;
+    text-rendering: optimizelegibility;
+    letter-spacing: 0.01rem;
+}
+.container a {
+}
+.container a:hover {
+}
+
+/* section left/right */
+section.one-third {
+    padding: 1em;
+    width: 33%;
+    position: relative;
+}
+.float {
+    display: inline-block;
+    /*text-align:center*/
 }
 
 /* Typing Effect */
@@ -63,6 +88,19 @@ h3 {
     100%{
         opacity: 1;
     }
+}
+
+/* icon */
+.fa {
+    font-weight: 300;
+    font-size: 3em;
+}
+.icon-title {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    padding: 2px 4px;
+    font-size: 90%;
+    background-color: #DBC8B8;
+    border-radius: 8px;
 }
 
 /* work with hide.js */
@@ -98,21 +136,6 @@ hr.cut:after {
 /* no down paddings */
 .no-gap {
     margin-bottom: 15px;
-}
-
-.container {
-    width: 650px;
-    margin:25px auto 50px auto;
-    color: #87746C;
-    line-height: 1.5em;
-    text-rendering: optimizelegibility;
-    letter-spacing: 0.01rem;
-}
-
-.container a {
-}
-
-.container a:hover {
 }
 
 /* delete */
@@ -184,21 +207,6 @@ code {
 
 .code-box .highlight {
     color: #B13254;
-}
-
-/* left and right */
-.parent{
-  overflow:hidden;
-}
-.left{
-  width:200px;
-  height:0px;
-  float:left;
-}
-.right{
-  width:200px;
-  height:0px;
-  float:left;
 }
 
 /* scroll bar */
