@@ -45,7 +45,7 @@ h3 {
 
 /* work with hide.js */
 .fade {
-    opacity: 1;
+    opacity: 0;
 }
 
 /* <hr> boarder */
@@ -162,6 +162,21 @@ code {
 
 .code-box .highlight {
     color: #B13254;
+}
+
+/* left and right */
+.parent{
+  overflow:hidden;
+}
+.left{
+  width:200px;
+  height:0px;
+  float:left;
+}
+.right{
+  width:200px;
+  height:0px;
+  float:left;
 }
 
 /* scroll bar */
