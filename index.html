@@ -11,6 +11,7 @@
   <script src="js/scale.fix.js"></script>
   <script src="js/jquery-1.7.1.min.js"></script>
   <script src="js/fade.js"></script>
+  <script src="js/timer.js"></script>
 </head>
 <body>
 
@@ -38,7 +39,22 @@
       </ruby>: 量子延迟实验等奇怪的 <b>bug</b> <span class="delete" title="呐~ 这个世界的所有bug都是特性来的呢~">特性</span> | <b>内向</b>的要死, 但是遇到兴趣相投的人就会<b>话多</b> | 崇尚<b>科学</b>: 毫不关心社会学 | 书<b>呆</b>子 | 爱看番的死<b>技术宅</b> | 几乎不玩游戏的说 | <b>顏文字</b>卖萌٩(❛ᴗ❛⁎) | <code>Sublime Text</code> 是最好的文本编辑器 （╯#-皿-)╯~~╧═╧ | <b>奥卡姆剃刀</b> 赛高!</p>
       <br>
       <p>This <code>MeaningOfLife.java</code> file is where all my power came from:</p>
-      <div class="code-box">print(<span class="highlight">"hello world"</span>)</div>
+      <div class="code-box">
+private boolean stillAlive = true;<br>
+private int lastSecond = <span id="timer">9</span>;<br>
+private void live(Energy e) {<br>
+&nbsp;&nbsp;while(stillAlive) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if ((this.getDream != null ) && (lastSecond > 0) ) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getDream().createArtificialIdiot();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getDream().observeTheUniverse();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;die();<br>
+&nbsp;&nbsp;stillAlive = false;<br>
+}<br>
+      </div>
       <a href="https://www.google.com" class="btn">Click Here to Understand the Universe</a>
 
 
@@ -198,7 +214,7 @@
   <section id="footnote">
     <div class="container">
       <hr class="title">
-      © 2018 Koke_Cacao (KokiCraft)
+      © 2018 Koke_Cacao (KokiCraft Team)
     </div>
   </section>
 
