@@ -30,8 +30,8 @@ h1 {
     font-weight: 300;
     font-size: 4em;
     /* cancel default h1 */
-    -webkit-margin-before: 0.1em;
-    -webkit-margin-after: 0.1em;
+    -webkit-margin-before: 0.2em;
+    -webkit-margin-after: 0.2em;
 }
 
 h2 {
@@ -44,6 +44,12 @@ h3 {
     color: #554037;
     font-weight: 300;
     font-size: 1.3em;
+}
+
+p {
+    margin:0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /* container */
@@ -60,15 +66,28 @@ h3 {
 .container a:hover {
 }
 
+/* list */
+ol, ul {
+    /*list-style-type: none;*/
+    margin: 0;
+    padding-left: 2em
+}
+
 /* section left/right */
 section.one-third {
     padding: 1em;
-    width: 33%;
+    width: 18em;
     position: relative;
+    display: block;
 }
-.float {
-    display: inline-block;
-    /*text-align:center*/
+.floatbox {
+    /*display: inline-block;*/
+    /*text-align: center;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    list-style: none;
+    vertical-align: baseline;
 }
 
 /* Typing Effect */
@@ -93,14 +112,21 @@ section.one-third {
 /* icon */
 .fa {
     font-weight: 300;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 .icon-title {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     padding: 2px 4px;
     font-size: 90%;
-    background-color: #DBC8B8;
+    background-color: #F2E5DA;
+    border: 1px solid #F2E5DA;
     border-radius: 8px;
+
+    page-break-inside: avoid;
+    line-height: 1.6;
+    display: block;
+    /*text-overflow: ellipsis;*/
+    /* Required for text-overflow to do anything */
 }
 
 /* work with hide.js */
@@ -190,6 +216,7 @@ code {
 
 .code-box {
     font-family: /*Menlo, Monaco, Consolas, */"Courier New", Courier, monospace;
+    margin-top: 0.5em;
     padding: 9px 14px;
     margin-bottom: 14px;
     background-color: #F2E5DA;
