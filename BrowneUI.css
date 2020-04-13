@@ -21,7 +21,11 @@ Boundary: B39A8F;
 html, body {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serf;
     background-image: url(css/img-noise-361x370.png);
-    background-color: #F7EBE1;
+    background-color: rgba(247, 235, 225, 80);
+    /*background-color: #F7EBE1;*/
+    /*background-blend-mode: normal;*/
+    /*background-blend-mode: overlay;*/
+    /*background-blend-mode: screen;*/
     margin:0;
     padding:0;
 }
@@ -306,7 +310,7 @@ code {
 
 #avatar {
     /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-    background-image: url('images/deepinception-kaggle.jpg');
+    background-image: url('images/kaggle_avatar.jpg');
     
     /* make a square container */
     width: 150px;
