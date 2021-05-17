@@ -79,8 +79,19 @@ canvas{
 /* list */
 ol, ul {
     /*list-style-type: none;*/
-    margin: 0;
+    margin: 1em;
     padding-left: 2em
+}
+
+.nodot {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.orderedlist {
+    margin: 0.5em;
+    padding-left: 1em;
 }
 
 /* section left/right */
@@ -98,6 +109,10 @@ section.one-third {
     justify-content: left;
     list-style: none;
     vertical-align: baseline;
+}
+
+.center {
+    text-align: center
 }
 
 /* Typing Effect */
@@ -305,6 +320,12 @@ code {
 .btn:hover {
     border: 1px solid transparent;
     background-color: #B13254;
+    color: #FFF;
+}
+
+.clicked {
+    border: 1px solid transparent;
+    background-color: #804A3A;
     color: #FFF;
 }
 
