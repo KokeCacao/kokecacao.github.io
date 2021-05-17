@@ -233,11 +233,6 @@ let wifusDict = {
       "支援",
     ],
   ])],
-  "杜宾": [1, new Set([
-    [
-      "支援机械",
-    ],
-  ])],
   "能天使": [6, new Set([
     [
       "高级资深干员",
@@ -1316,47 +1311,27 @@ function getStars(stars) {
   }
 }
 
-function init() {
-  clearAllSelection();
-  clearAllResult();
-  // initialize selected set
-  let listOfButton = document.querySelector("#tag-list").querySelectorAll("a");
-  listOfButton.forEach((button) => {
-    // set initial buttons containing % to clicked
-    if (button.textContent.includes("%")) {
-      button.className = "btn clicked";
-      let name = button.firstChild.nodeValue;
-      selected.add(name);
-      console.log("Added: " + name + "; Now:");
-      console.log(selected);
-    }
-  });
-  appendEmpty();
-}
-
 function clearAllSelection() {
   let listOfButton = document.querySelector("#tag-list").querySelectorAll("a");
   listOfButton.forEach((button) => {
-    if (button.className == "btn clicked"
+    if (button.className === "btn clicked"
       // && !button.textContent.includes("%")
     ) {
       let name = button.firstChild.nodeValue;
       button.className = "btn uncliked";
       let error = selected.delete(name);
-      console.log("Removed: " + name + "; Now:");
-      console.log(selected);
       if (!error) alert("Previous removal unsuccessful. Element does not exist in the first place.");
     }
   });
-  if (selected.size != 0) {
-    alert("Error: slection size != 0 when cleared");
+  if (selected.size !== 0) {
+    alert("Error: slection size !== 0 when cleared");
   }
 }
 
 function appendEmpty() {
   let empty = document.createElement("h3");
-  empty.className = "center"
-  empty.textContent = "没有结果的说~"
+  empty.className = "center";
+  empty.textContent = "没有结果的说~";
   document.querySelector("#result").appendChild(document.createElement("br"));
   document.querySelector("#result").appendChild(document.createElement("br"));
   document.querySelector("#result").appendChild(empty);
@@ -1376,6 +1351,22 @@ function clearAllResult() {
   result3Star = [];
   result2Star = [];
   result1Star = [];
+}
+
+function init() {
+  clearAllSelection();
+  clearAllResult();
+  // initialize selected set
+  let listOfButton = document.querySelector("#tag-list").querySelectorAll("a");
+  listOfButton.forEach((button) => {
+    // set initial buttons containing % to clicked
+    if (button.textContent.includes("%")) {
+      button.className = "btn clicked";
+      let name = button.firstChild.nodeValue;
+      selected.add(name);
+    }
+  });
+  appendEmpty();
 }
 
 function createWifu(stars, name, tagsList) {
@@ -1402,7 +1393,7 @@ function createWifu(stars, name, tagsList) {
   });
   listOfCodes.forEach((li) => {
     ol.appendChild(li);
-  })
+  });
 
   sec.appendChild(h3);
   sec.appendChild(ol);
@@ -1422,22 +1413,18 @@ $(window).on("load", function () {
 
   // tags
   listOfCategory.forEach((lis) => {
-    buttons = lis.querySelectorAll("a");
+    let buttons = lis.querySelectorAll("a");
     buttons.forEach((button) => {
       button.onclick = function () {
         let name = button.firstChild.nodeValue;
 
-        if (button.className == "btn uncliked") {
+        if (button.className === "btn uncliked") {
           button.className = "btn clicked";
           selected.add(name);
-          console.log("Added: " + name + "; Now:");
-          console.log(selected);
 
-        } else if (button.className == "btn clicked") {
+        } else if (button.className === "btn clicked") {
           button.className = "btn uncliked";
           let error = selected.delete(name);
-          console.log("Removed: " + name + "; Now:");
-          console.log(selected);
           if (!error) alert("Previous removal unsuccessful. Element does not exist in the first place.");
         }
 
@@ -1446,9 +1433,7 @@ $(window).on("load", function () {
   });
 
   let clear = document.querySelector("#clear");
-  clear.onclick = function () {
-    init();
-  }
+  clear.onclick = init;
 
   let calculate = document.querySelector("#calculate");
   calculate.onclick = function () {
@@ -1461,15 +1446,12 @@ $(window).on("load", function () {
       let result = new Set();
       for (let goodTags of wifuTagList) {
         if (isSuperset(selected, goodTags)) {
-          console.log("Good, get it by: " + goodTags);
           result.add(goodTags);
-          console.log("Added:");
-          console.log([wifuName, goodTags]);
         }
       }
 
       // congregate result
-      if (result.size != 0) {
+      if (result.size !== 0) {
         if (stars == 5) {
           result5Star.push([wifuName, result]);
         } else if (stars == 4) {
@@ -1486,13 +1468,6 @@ $(window).on("load", function () {
     }
 
     // output
-    console.log("You got:");
-    console.log(result5Star);
-    console.log(result4Star);
-    console.log(result3Star);
-    console.log(result2Star);
-    console.log(result1Star);
-
     let old = document.querySelector("#result");
 
     result5Star.map(([wifuName, result]) => {
@@ -1529,5 +1504,5 @@ $(window).on("load", function () {
       appendEmpty();
     }
 
-  }
+  };
 });
