@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="BrowneUI.css">
   <script src="js/scale.fix.js"></script>
   <script src="js/jquery-1.7.1.min.js"></script>
+  <script src="js/popup-js.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/popup-js.css">
   <script src="js/fade.js"></script>
   <script src="js/arknights.js"></script>
 
@@ -23,7 +25,7 @@
 
       <br>
       <h1>豆苗人力</h1>
-      <p>٩(❛ᴗ❛⁎) 帮您找到最适合的磐蟹 &mdash; [最后更新: 2021/05/16] <span class="typing">_</span></p>
+      <p>٩(❛ᴗ❛⁎) 帮您找到最适合的磐蟹 &mdash; [最后更新: 2021/06/28] <span class="typing">_</span></p>
 
       <br>
 
@@ -60,29 +62,20 @@
               class="btn uncliked">快速复活</a>
           </p>
         </li>
-        <li>
-          <p>
-            概率获得(<ruby class="jp">强烈建议勾选
-              <rp>（</rp>
-              <rt>因为可能出同等或更高星干员</rt>
-              <rp>）</rp>
-            </ruby>): <a class="btn uncliked">90%</a> <a class="btn uncliked">50%</a> <a class="btn uncliked">33%</a>
-          </p>
-        </li>
       </ul>
 
       <br>
       <p>(所有数据来自于 Bilibili UP主 @海川海川的视频: <a
-          href="https://www.bilibili.com/video/BV1La4y1i7Pf/">https://www.bilibili.com/video/BV1La4y1i7Pf/</a>)</p>
-      <p>为了<ruby class="jp">引流到原UP主
+          href="https://www.bilibili.com/video/BV1cV411H7St">https://www.bilibili.com/video/BV1cV411H7St</a>)</p>
+      <p>暂时<ruby class="jp">未添加任何"新手"与 3 星的标签
           <rp>（</rp>
-          <rt> 偷懒, 我真的肝不动了 QAQ </rt>
+          <rt> 天啊, 那么多干员. 我真的肝不动了 QAQ </rt>
           <rp>）</rp>
-        </ruby>, 暂时未添加任何"资深干员"与"高级资深干员"的标签. 欧皇请点以上链接查看并挑选5, 6星干员.</p>
+        </ruby>. 其他所有至更新日期的干员全部收录完成!</p>
 
       <hr class="title">
 
-      <a class="btn" id="calculate">开始计算</a>
+      <a onclick="myPopup.openPopup()" class="btn" id="calculate">开始计算</a>
       <a class="btn" id="clear">清空</a>
 
     </div>
