@@ -1986,8 +1986,14 @@ function appendEmpty() {
   let empty = document.createElement("h3");
   empty.className = "center";
   empty.textContent = "没有结果的说~";
+  let img = document.createElement("img");
+  img.className = "center";
+  img.src = "https://count.getloli.com/get/@Koke_Cacao-arknight?theme=rule34"
+  let center = document.createElement("center");
+  center.appendChild(img);
   document.querySelector("#result").appendChild(document.createElement("br"));
   document.querySelector("#result").appendChild(document.createElement("br"));
+  document.querySelector("#result").appendChild(center);
   document.querySelector("#result").appendChild(empty);
   document.querySelector("#result").appendChild(document.createElement("br"));
   document.querySelector("#result").appendChild(document.createElement("br"));
