@@ -1,6 +1,30 @@
 <html>
-
 <head>
+  <!--   <section id="fun">
+  <div class='container'>
+  </style>
+  <canvas id="universeElement" width="10" height="10"></canvas>
+  <a class="github-link" href="https://github.com/harttle/universe/tree/master">Github</a>
+  <style>
+  .github-link {
+    position: absolute;
+    color: black;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+  }
+  </style>
+  <script src="./universe.js"></script>
+  <script>
+    universeElement.setAttribute('width', window.innerWidth);
+    universeElement.setAttribute('height', window.innerHeight);
+    var univ = universe(universeElement)
+    univ.bind(document.body)
+    univ.start()
+    document.body.addEventListener('click', univ.createStarHere);
+  </script>
+  </div>
+</section> -->
   <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
   <meta charset="utf-8">
   <meta name="description" content="Koke_Cacao's personal introduction">
@@ -29,18 +53,22 @@
 <body>
   <section id="intro">
     <div class="container">
-
       <br>
       <br>
-      <h1>_</h1>
+      <div align="center">
+        <div id="avatar"></div>
       <br>
       <h1>Koke_Cacao</h1>
-      <p>Wanting to know everything, but time is limited &mdash; [2018/07/18] <span class="typing">_</span></p>
+      <p><br>Wanting to know everything, but time is limited &mdash; [2018/07/18] <span class="typing">_</span></p>
+      </div>
 
       <br>
+      <br>
       <p>Other Languages: <a href="zh-CN.html" class="link">[简体中文]</a>; <a href="en-US.html" class="link">[English]</a>;
-        <a href="zh-TW.html" class="link">[繁體中文]</a>; <a href="ja-JP.html" class="link">[日本語]</a>; (WARNING: English is
-        the most up-to-date version.)</p>
+        <a href="zh-TW.html" class="link">[繁體中文]</a>; <a href="ja-JP.html" class="link">[日本語]</a>;</p>
+        <p>More About Me: <a href="https://resume.chenhanke.me" class="link">[Resume]</a>; <a
+          href="https://cv.chenhanke.me" class="link">[CV]</a>; <a href="https://art.chenhanke.me" class="link">[Art
+          Portfolio]</a>;</p>
       <p>My other websites: <a href="https://ssfs.club" class="link">[RoboticsClub]</a>; <a href="https://art.ssfs.club"
           class="link">[ArtClub]</a>; <a href="https://blog.chenhanke.me" class="link">[Blog]</a>; <a
           href="https://kokecacao.me" class="link">[Website]</a>;</p>
@@ -51,12 +79,11 @@
           <rt>emmmmmmmmm...</rt>
           <rp>）</rp>
         </ruby>: Quantum delay experiment's strange <b>bug</b> <span class="delete"
-          title="Na~ All the bugs in this world are called 'properties'~">properties</span> | Extremely
-        <b>Introvert</b>, but <b>talkative</b> with people who share same interests with me | Love <b>Science</b> | A
-        <b>Nerd</b> | <b>Tech Person</b> who love watching anime | Almost never play video games | <b>Yan
-          Text</b>٩(❛ᴗ❛⁎) | <code>Sublime Text</code> is the world-best-looking text editor（╯#-皿-)╯~~╧═╧ (still learning
-        the useless <code>Vim</code>) | <code>Pytorch</code> is the best framework in ML | Using <code>Ubuntu</code> as
-        desktop | <b>Occam's razor</b> is the fundemental theory of <b>SCIENCE</b>!</p>
+          title="Na~ All the bugs in this world are called 'properties'~">properties</span> | Somewhat
+        <b>Introvert(INTJ~INTP)</b> existentialist, but <b>talkative</b> with people who share same interests with me | Love <b>Science</b> | A
+        <b>Nerd</b> | <b>Tech Person</b> who love watching anime | Love <b>Minecraft</b> | <b>Yan
+          Text</b>٩(❛ᴗ❛⁎) | <code>VSCode</code> is the best text editor（╯#-皿-)╯~~╧═╧ (after trashing my useless <code>Spacemacs</code>) | <code>Pytorch</code> is the best framework in ML | Using <code>Ubuntu</code> as
+        desktop from 2018 | <b>Occam's razor</b> is the fundamental idea of <b>SCIENCE</b>!</p>
       <br>
       <p>This <code>MeaningOfLife.java</code> file is where all my power came from:</p>
       <div class="code-box">
@@ -81,45 +108,98 @@
     </div>
   </section>
 
+  <section id="tldf">
+    <div class="container fade">
+      <h2> <ruby class="jp">TL;DR:<rp>（</rp>
+          <rt>too long; didn't read</rt>
+          <rp>）</rp>SSFS'20 | CMU'2024
+        </ruby></h2>
+    </div>
+  </section>
+
+  <section id="current">
+    <div class="container fade">
+      <hr class="cut">
+      <h2>Current Project</h2>
+      <h1 align="center">
+        <img src="https://github.kokecacao.me/chenhanke.me/assets/images/deep_vocab.png" alt="Deep Vocab" width="200">
+        <br>
+        <br>Deep Vocab<br>
+      </h1>
+      
+      <h4 align="center">Most Scientific Way for Memorization</h4>
+      
+      <p align="center">
+        <img src="https://api.codemagic.io/apps/611d38a986db0df7ae0505e0/611d38a986db0df7ae0505df/status_badge.svg">
+        <img src="https://img.shields.io/github/v/release/kokecacao/deep_vocab?include_prereleases">
+        <img src="https://img.shields.io/github/last-commit/kokecacao/deep_vocab">
+        <img src="https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fwww.kokecacao.me">
+      </p>
+      
+      <p align="center">
+        <a href="https://github.com/KokeCacao/deep_vocab/blob/master/README.md">[English]</a>, 
+        <a href="https://github.com/KokeCacao/deep_vocab/blob/master/zh-CN.md">[中文]</a>
+      </p>
+      Deep Vocab is a mobile app that uses Machine Learning algorithm to actively push vocabularies that you about to forget, so that you can efficiently memorize them in your fragmented time.
+
+      <p align="center">
+        <img src="https://github.kokecacao.me/chenhanke.me/assets/images/deep_vocab_01.png" height="400">
+        <img src="https://github.kokecacao.me/chenhanke.me/assets/images/deep_vocab_02.png" height="400">
+        <img src="https://github.kokecacao.me/chenhanke.me/assets/images/deep_vocab_03.png" height="400">
+        <img src="https://github.kokecacao.me/chenhanke.me/assets/images/deep_vocab_04.png" height="400">
+      </p>
+
+    </div>
+  </section>
 
   <section id="skill">
     <div class="container fade">
       <hr class="cut">
       <h2>0x00 My <ruby class="jp">Skills
           <rp>（</rp>
-          <rt>zhuang bi</rt>
+          <rt>like... you know... in the games</rt>
           <rp>）</rp>
         </ruby> Point &mdash; No need to redistribute, right?</h2>
 
       <div class="floatbox">
         <section class="one-third">
-          <i class="fa fa-code">| Codings</i>
-          <h3 class="icon-title">I can do: Java | Python | Android | SQL | html | css | Lua | Github | Tensorflow |
-            sklearn | OpenCV | Linux(Kali, Ubuntu) | Pytorch</h3>
+          <i class="fa fa-code">| Basic Codings</i>
+          <h3 class="icon-title"> Java | Python | C | sml | Dart | Javascript | SQL | Flask | html | css | Github | Tensorflow(Keras) | Flutter(Android/IOS) | OpenCV | Linux(Ubuntu) | Pytorch</h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-eye">| AI/ML</i>
-          <h3 class="icon-title">Currently taking Udacity's Deep Learning for 2nd year. Doing some Kaggle competitions.
-            Studying CNN ...</h3>
+          <i class="fa fa-youtube">| Basic Workflow</i>
+          <h3 class="icon-title"> Unity | Krita | Flash | AfterEffect | Premiere | Audition | C4D | Fusion360 | ZBrush</h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-paint-brush">| Water Color</i>
-          <h3 class="icon-title">A long time without practicing made my skill rusty. Not long ago made the SilliconLives
-            Project - Using watercolor to depict the possible shapes of silicon based lives.</h3>
+          <i class="fa fa-eye" aria-hidden="true">| Computer Vision ML/DL</i>
+          <h3 class="icon-title">Kaggle Expert (Top 0.3%) | World 1st in Histopathological Cancer Competition | Working
+            my way to Meta Learning and NLP</h3>
+        </section>
+        <section class="one-third">
+          <i class="fa fa-sliders" aria-hidden="true">| Cybersecurity</i>
+          <h3 class="icon-title">"Hacked" Stanford's SCPS Website (SQL Injection), bug reported (2018) | WiFi sniffing
+            (2019)</h3>
+        </section>
+        <section class="one-third">
+          <i class="fa fa-android" aria-hidden="true">| Engineering</i>
+          <h3 class="icon-title">Raspberry Pi | Arduino | CAD | Design Artificial Idiots (AI) for robotics | FIRST Tech
+            Challenge 13813 Captain</h3>
+        </section>
+        <section class="one-third">
+          <i class="fa fa-paint-brush">| AI+Art</i>
+          <h3 class="icon-title">Using Computer Vision to make Art. Be an AI artist. <a href="https://art.chenhanke.me" class="link">[Portfolio]</a></h3>
         </section>
         <section class="one-third">
           <i class="fa fa-gamepad">| Game Design</i>
-          <h3 class="icon-title">KokiCraft is my first work for game design. It contains creativities about the design
-            of mechanisms of weaponries/gangs/chests...</h3>
+          <h3 class="icon-title">KokiCraft is my first online game: made GTA mode / weaponries / gangs...</h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-address-card">| UI Design</i>
-          <h3 class="icon-title">Making icons, Web UI Design, Minecraft Inventory UI Design</h3>
+          <i class="fa fa-address-card">| Tech Art</i>
+          <h3 class="icon-title">3D Shader in Unity, 2D interface, Web UI, Minecraft Inventory UI Design</h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-youtube">| Video Making</i>
-          <h3 class="icon-title">Using After Effect to do PSAs: <a
-              href="https://www.youtube.com/watch?v=O1ydHoHfzJk&t=1s" class="link">Hunger is not a game</a></h3>
+          <i class="fa fa-book" aria-hidden="true">| Writing & Book Publishing</i>
+          <h3 class="icon-title">Book "Tell Me What Rain Knows" personal book collection of proses and reflections (2017) | SSFS Writing Center Tutor</h3>
         </section>
       </div>
 
@@ -129,78 +209,54 @@
   <section id="learning">
     <div class="container fade">
       <hr class="cut">
-      <h2>0x01 Graturated From</h2>
+      <h2>0x01 Gratulate From</h2>
       <ul style="list-style-type:disc">
-        <li>Shenzhen Experimental School</li>
+        <li>Shenzhen Experimental School (2016)</li>
         <li>Udacity's Machine Learning Nanodegree (2017)</li>
-        <li>Stanford Pre-Collegiate Summer Institutes' Artificial Intelegence for Robotics (2018)</li>
-        <li><del>CMU The Robotics Institute's Robotics Feiyue</del></li>
-        <li>Studying...</li>
+        <li>Stanford Pre-Collegiate Summer Institutes' Artificial Intelligence for Robotics (2018)</li>
+        <li><del>CMU The Robotics Institute's Robotics Feiyue</del> didn't go</li>
         <li>Udacity's Deep Learning Nanodegree (2018)</li>
+        <li>UIUC's Data Visualization (2019)</li>
+        <li>UIUC's Text Retrieval and Search Engines (2020)</li>
+        <li>Sandy Spring Friends School (2020)</li>
+        <li>Studying in Carnegie Mellon University ...</li>
       </ul>
-
-      <section>
-        <h3>Books I read &mdash; Mainly about Quantum Physics and intricate classics</h3>
-        <ul style="list-style-type:none;">
-          <li>From the New World</li>
-          <li>The Three Body Problem(大刘)</li>
-          <li>Big Design(Stephen Hawking)</li>
-          <li>The Brief Story of the Universe</li>
-          <li>Stephen Hawking's Universe</li>
-          <li>The Shape of Time</li>
-          <li>...</li>
-        </ul>
-      </section>
     </div>
   </section>
-
 
   <section id="things">
     <div class="container fade">
       <hr class="cut">
-      <h2>0x02 My Achievements &mdash; Always making changes until I die</h2>
+      <h2>0x02 My Achievements &mdash; Always making changes while I am alive</h2>
       <div class="floatbox">
         <section class="one-third">
           <i class="fa fa-square"> KokiCraft</i>
-          <h3 class="icon-title">A well-known Minecraft Server(GTA/MiniGame)'s Owner | Programmer | Writer | Designer |
-            Administrator | (Website is off currently). (2014-2017)</h3>
+          <h3 class="icon-title">A well-known Minecraft Server(GTA/MiniGame)'s Owner | Programmer | Writer | Designer | Administrator | Defended against 50+ DDoS attacks / month | 344,941 players, $3500+
+            profit | $500/month profit when open donation. (<a href="https://www.youtube.com/watch?v=PhJq5YnzfUo" class="link">[Video]</a>) (2014-2017)</h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-square"> Google Code-in</i>
-          <h3 class="icon-title">First Year: In charged of Terasology's open-source game development, improving the game
-            experience. Second Year: Using Natural Language Processing to separate Chinese Characters, helping an open
-            sourced project. (2017)</h3>
+          <i class="fa fa-square"> Kaggle Expert</i>
+          <h3 class="icon-title">Histopathologic Cancer Detection: solo world-1st on public leaderboard | Won <a href="https://www.kaggle.com/kokecacao" class="link">Kaggle</a>-Expert title as high school student | Various ranks on other competitions (2018-2020)</h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-square"> FIRST TechChallenge</i>
-          <h3 class="icon-title">A well-known robotics competition in US. Only used two weeks to design and make the
-            robot and win the Judge's Award in the first year. (2018)</h3>
-        </section>
-        <section class="one-third">
-          <i class="fa fa-square"> TGS Salt Identification Challenge</i>
-          <h3 class="icon-title">My first time entering a Kaggle Machine Learning Competition. I used Python to build my
-            first pipline from ground up, achived 50% percentile in predicting the mask of salt location from satelite
-            images. (2018)</h3>
-        </section>
-        <section class="one-third">
-          <i class="fa fa-square"> Human Protein Atlas Image Classification</i>
-          <h3 class="icon-title">My second Kaggle Competition. I improved my softwere and gave it a new name:
-            RedStoneTorch. The competition is currently runing. I am currently reading ML papers, trying to imporve my
-            network. (2018)</h3>
-        </section>
-        <section class="one-third">
-          <i class="fa fa-square"> SSFS's Scholarship</i>
-          <h3 class="icon-title">I successfully led my SSFS Robotics Team 13813 to win the school's scholarship. The
-            school ended up giving us more than we applied: 96% of all club's scholarship avaliable for 2018-2019 school
-            year. (2018)</h3>
+          <i class="fa fa-square" aria-hidden="true"> SSFS Robotics Captain</i>
+          <h3 class="icon-title">FIRST Tech Challenge 13813 Judge's Award (2018) | 1st in Local, Maryland championship (2019) | 10% school population | Donations from SSFS, Kuka, Leidos, NAEC.</h3>
         </section>
         <section>
           <h3>Other:</h3>
           <ul style="list-style-type:none;">
+            <li>CV for Qubo R@M: Helped UMD Robotics for their underwater robot Qubo's robotics vision (2020)</li>
             <li>Discover Stanford Web-Vulnerability: SQL injection (2018)</li>
+            <li>Nigeria Business Partnership Special Project Chair (2017-2020)</li>
+            <li>Terasology: Open-source game dev (2017-2018)</li>
+            <li>Capstone Honor: SSFS Senior Project, graduated with Capstone Honor (2020)</li>
+            <li>Weibo Linguistic Analysis for Wuhan Coronavirus Outbreak. (2019)</li>
+            <li>Investigating into Chaos Theory using python simulations. (2019)</li>
+            <li>Kerbel Space Program (Rocket Design & Launching) (2019)</li>
+            <li>Genetic Algorithm for Chemistry 14 Bottle Problem (2018)</li>
             <li>Created SSFS ArtClub: The only student-based club in Middle School (2015)</li>
-            <li>Created SSFS Robotics Club: The best tech-club in Upper School (2016)</li>
             <li>Developed Koki.lua: Onmyouji hacking script (2016)</li>
+            <li>Competed in China Cup International Regatta (CCIR) (2015)</li>
             <li>Developed Fucking Copy: Flash drive copying software (2013)</li>
             <li>...</li>
           </ul>
@@ -216,69 +272,120 @@
       <h2>0x03 Black-Tech Lab &mdash; Github Projects</h2>
       <div class="floatbox">
         <section class="one-third">
-          <i class="fa fa-github"> <a href="https://github.com/KokeCacao/GameCore" class="link">GameCore</a></i>
-          <h3 class="icon-title">The basic function of my KokiCraft server.</h3>
+          <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/KokeCacao/GameCore"
+              class="link">GameCore</a></i>
+          <h3 class="icon-title">The basic function of my KokiCraft server. (2016)</h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-github"> <a href="https://github.com/KokeCacao/Team13813" class="link">Team13813</a></i>
-          <h3 class="icon-title">The program installed in BeestBot to provide all the actions of the robot.</h3>
-        </section>
-        <section class="one-third">
-          <i class="fa fa-github"> <a href="https://github.com/KokeCacao/PlayerNameProtect"
-              class="link">PlayerNameProtect</a></i>
-          <h3 class="icon-title">A Minecraft plugin used to prevent fatal name injection in Windows environments.</h3>
-        </section>
-        <section class="one-third">
-          <i class="fa fa-github"> <a href="https://github.com/HurryPeng/FragMem" class="link">FragMem</a></i>
-          <h3 class="icon-title">A Simple Android APP for vocab memorizations.</h3>
-        </section>
-        <section class="one-third">
-          <i class="fa fa-github"> <a href="https://github.com/KokeCacao/kokecacao.github.io/blob/master/BrowneUI.css"
-              class="link">BrowneUI</a></i>
-          <h3 class="icon-title">The Markdown UI used to create a simple static web-page. Also used in this website.
+          <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/KokeCacao/Team13813"
+              class="link">Team13813</a></i>
+          <h3 class="icon-title">The program installed in BeestBot to provide all the actions of the robot. (2018-2019)
           </h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-github"> <a href="https://github.com/KokeCacao/Hamster" class="link">Hamster</a></i>
-          <h3 class="icon-title">Artificial Intelligence programed on small robot. Including node searching, State
-            Machine, path finding, simulation, and Reinforcement Learning.</h3>
+          <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/KokeCacao/PlayerNameProtect"
+              class="link">PlayerNameProtect</a></i>
+          <h3 class="icon-title">A Minecraft plugin used to prevent fatal name injection in Windows environments. (2016)
+          </h3>
         </section>
         <section class="one-third">
-          <i class="fa fa-github"> <a href="https://github.com/KokeCacao/RedStoneTorch"
-              class="link">RedStoneTorch</a></i>
+          <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/HurryPeng/FragMem"
+              class="link">FragMem</a></i>
+          <h3 class="icon-title">A Simple Android APP for vocab memorizations. (2018)</h3>
+        </section>
+        <section class="one-third">
+          <i class="fa fa-github" aria-hidden="true"> <a
+              href="https://github.com/KokeCacao/kokecacao.github.io/blob/master/BrowneUI.css"
+              class="link">BrowneUI</a></i>
+          <h3 class="icon-title">The Markdown UI used to create a simple static web-page. Also used in this website.
+            (2018)</h3>
+        </section>
+        <section class="one-third">
+          <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/KokeCacao/Hamster"
+              class="link">Hamster</a></i>
+          <h3 class="icon-title">Artificial Intelligence programed on small robot. Including node searching, State
+            Machine, path finding, simulation, and Reinforcement Learning. (2018)</h3>
+        </section>
+        <section class="one-third">
+          <i class="fa fa-github" aria-hidden="true"> <a href="https://github.com/KokeCacao/RedStoneTorch"
+              class="link">RedStoneTorch v2</a></i>
           <h3 class="icon-title">The Machine Learning Library I build for winning Kaggle competitions. It is designed to
             be malleable and can be used to deal with any Machine Learning problem efficiently. I used it in TGS and HPA
-            competitions. Because I am currently compete in those competitions, this softwere have not been opensourced
-            by me.</h3>
+            competitions. Improving from v1, I generalized the ML tool to more tasks like the Qubo dataset and
+            Histopathologic Cancer Detection. (2019)</h3>
         </section>
       </div>
     </div>
   </section>
 
+  <section id="anime">
+    <div class="container fade">
+      <hr class="cut">
+      <h2>0x04 Anime &mdash; The Bibles of Anime</h2>
+      <ul style="list-style-type:disc">
+        <li>...</li>
+      </ul>
+      <br>
+
+      <section id="book">
+        <h3>Books I read &mdash; Mainly about Quantum Physics and intricate classics</h3>
+        <ul style="list-style-type:none;">
+          <li>From the New World</li>
+          <li>The Three Body Problem(大刘)</li>
+          <li>Big Design(Stephen Hawking)</li>
+          <li>The Brief Story of the Universe</li>
+          <li>The Unbelievable World of Quantum</li>
+          <li>The Balance of the Universe</li>
+          <li>The Structure of the Universe</li>
+          <li>The Arrow of Time</li>
+          <li>Stephen Hawking's Universe</li>
+          <li>The Shape of Time</li>
+          <li>Feynman's Lecture on Physics</li>
+          <li>...</li>
+        </ul>
+      </section>
+    </div>
+  </section>
 
   <section id="friends">
     <div class="container fade">
       <hr class="cut">
-      <h2>0x04 My Friends &mdash; Hug</h2>
+      <h2>0x05 My Friends &mdash; Hug</h2>
       <ul style="list-style-type:disc">
         <li>@HurryPeng(PP): Can do both C and Java, but is drowning in the seas of exams (ง •̀_•́)ง頑張るよ</li>
         <li>@wqreer: Mad-Back-Tech-Machinist; friends with great people. Studying VR</li>
         <li>@billbafare: Self-studying ML with me, dragging me to Kaggle... In Wakeforest, running labs with a ML
           professor.</li>
         <li>@Jingcheng_Yang: Steam map maker</li>
-        <li>@Francis(Bob) Wang: Highschool Student who is also interested in ML, and who has a Finance Team.</li>
+        <li>@Francis(Bob) Wang: Highschool Student (at that) who is also interested in ML, and who has a Finance Team.</li>
         <li>@Alexander Liao: TGS salt 5th place, who inspired me, giving me a lot of great ML ideas.</li>
+        <li>@Feilian: The leader of Team 9801 of FTC. Currently at Georgia Tech.</li>
+        <li>@Mingzhou Han: Good at SQL stuff and 3D modeling. Best body at SSFS.</li>
+        <li>@Duna: Awesome roommate in CMU who enjoys robots.</li>
         <li>...</li>
       </ul>
       <br>
       <a href="mailto:i@kokecacao.me" class="link">Can you be my friend? ( ゜- ゜)つロ 乾杯~</a>
+
+      <section>
+        <h3>Affiliations:</h3>
+        <ul style="list-style-type:none;">
+          <li>Kaggle Expert</li>
+          <li>Kaggle-CN</li>
+          <li>FIRST Volunteer / Alumini</li>
+          <li>ods.ai</li>
+          <li>KentAI Lab / Kaggle-Jr</li>
+          <li>X-Order Lab</li>
+        </ul>
+      </section>
+
     </div>
   </section>
 
   <section id="links">
     <div class="container fade">
       <hr class="cut">
-      <h2>0x05 Global Deployment &mdash; Sounds big, but it means social-network</h2>
+      <h2>0x06 Global Deployment &mdash; Sounds big, but it means social-network</h2>
 
       <div class="floatbox">
         <ul style="list-style-type:none;">
@@ -290,10 +397,8 @@
 
         <ul style="list-style-type:none;">
           <li><a href="https://space.bilibili.com/1814164" class="link">[Bilibili]</a></li>
-          <!-- <li><a href="https://blog.chenhanke.me" class="link">[Weibo]</a></li> -->
           <li><a href="https://twitter.com/Koke_Cacao" class="link">[Twitter]</a></li>
           <li><a href="#" onClick="alert('微信号: Koke_Cacao')" class="link">[WeChat]</a></li>
-          <!-- <li><a href="https://blog.chenhanke.me" class="link">[Instagram]</a></li> -->
           <li><a href="mailto:i@kokecacao.me" class="link">[Email]</a></li>
         </ul>
 
@@ -306,6 +411,9 @@
 
   <section id="calendar">
     <div class="container fade">
+      <hr class="cut">
+      <h2>0x07 Calendar &mdash; Busy...</h2>
+
       <iframe src="https://calendar.google.com/calendar/embed?src=su.chen.hanke%40gmail.com&ctz=America%2FNew_York" style="border: 0" width=100% height="600" frameborder="0" scrolling="no"></iframe>
     </div>
   </section>
@@ -313,11 +421,9 @@
   <section id="footnote">
     <div class="container">
       <hr class="title">
-      © 2018 Koke_Cacao (KokiCraft Team)
+      © 2018-2021 Koke_Cacao (KokiCraft Team)
     </div>
   </section>
-
-
 
 </body>
 
